@@ -365,12 +365,11 @@ section strong {
 }
 
 .organizers-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+    display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
     margin: 1rem 0;
-    
 }
 
 .organizer-card {
@@ -381,6 +380,7 @@ section strong {
     border: 1px solid var(--border-color);
     transition: all 0.3s ease;
     text-align: center;
+    width: 200px;
 }
 
 .organizer-card:hover {
@@ -652,12 +652,16 @@ section strong {
     }
 
     .organizers-grid {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        justify-content: center;
     }
 
     .organizer-photo img {
         width: 60px;
         height: 60px;
+    }
+
+    .organizer-card {
+        width: 160px;
     }
 
     .date-item {
