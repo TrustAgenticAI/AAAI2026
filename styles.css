@@ -105,9 +105,16 @@ body {
 /* 首页横幅样式 */
 .hero {
     padding: 4rem 0;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('images/background2.jpg');
+    background-size: cover;
+    background-position: center 25%;
+    background-repeat: no-repeat;
     color: white;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: clamp(420px, 55vh, 720px);
 }
 
 .hero-content {
@@ -359,8 +366,11 @@ section strong {
 
 .organizers-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
     gap: 1rem;
+    justify-content: center;
+    margin: 1rem 0;
+    
 }
 
 .organizer-card {
@@ -603,6 +613,11 @@ section strong {
         transform: translateY(-8px) rotate(-45deg);
     }
 
+    .hero {
+        min-height: clamp(320px, 48vh, 560px);
+        background-position: center 10%;
+    }
+
     .hero-title {
         font-size: 2rem;
     }
@@ -658,6 +673,10 @@ section strong {
 }
 
 @media (max-width: 480px) {
+    .hero {
+        min-height: clamp(260px, 42vh, 480px);
+        background-position: center 8%;
+    }
     .container {
         padding: 0 15px;
     }
