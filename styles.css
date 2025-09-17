@@ -311,6 +311,9 @@ section strong {
     border: 1px solid var(--border-color);
     transition: all 0.3s ease;
     text-align: center;
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
 .speaker-card:hover {
@@ -381,6 +384,9 @@ section strong {
     transition: all 0.3s ease;
     text-align: center;
     width: 200px;
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
 .organizer-card:hover {
