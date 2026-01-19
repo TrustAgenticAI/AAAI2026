@@ -115,12 +115,38 @@ body {
     align-items: center;
     justify-content: center;
     min-height: clamp(420px, 55vh, 720px);
+    position: relative;
 }
 
 .hero-content {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+.hero-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.hero-logo-corner {
+    position: absolute;
+    top: 1.5rem;
+    right: clamp(1.5rem, 5vw, 3rem);
+}
+
+.hero-logo {
+    max-height: 80px;
+    max-width: 200px;
+    min-width: 100px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+
+    opacity: 0.9;
 }
 
 .workshop-badge {
