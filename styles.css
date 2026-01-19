@@ -124,14 +124,14 @@ body {
     padding: 0 20px;
 }
 
-.hero-logos {
+/* .hero-logos {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
     margin-bottom: 2rem;
     flex-wrap: wrap;
-}
+} */
 
 .hero-logo-corner {
     position: absolute;
