@@ -360,7 +360,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 abstractBox = document.createElement('div');
                 abstractBox.className = 'paper-row-abstract';
                 const abstractText = row.getAttribute('data-abstract') || '暂无摘要，敬请期待。';
-                abstractBox.innerHTML = `<p>${abstractText}</p>`;
+                
+                // 获取 poster link，如果存在则加入一个链接
+                const posterLink = row.getAttribute('data-poster-link');
+                let contentHtml = `<p>${abstractText}</p>`;
+                // if (posterLink && posterLink.trim() !== "") {
+                //     // 可定制 poster 显示内容
+                //     contentHtml += `<p><a href="${posterLink}" target="_blank" rel="noopener" class="poster-link">Poster Link</a></p>`;
+                // }
+                abstractBox.innerHTML = contentHtml;
+
                 row.appendChild(abstractBox);
             }
 

@@ -600,17 +600,25 @@ section strong {
     color: #255d6f;
 }
 
-.paper-row-pdf {
+.paper-row-pdf,
+.paper-row-poster {
     display: inline-flex;
+    min-width: 90px;
     align-items: center;
-    gap: 0.25rem;
+    gap: 0.35rem;
     font-size: 0.9rem;
-    color: #255d6f;
     text-decoration: none;
-    padding: 0.25rem 0.5rem;
-    border-radius: 4px;
+    padding: 0.35rem 0.75rem; /* 统一按钮尺寸 */
+    border-radius: 6px;
+    min-height: 34px;
+    line-height: 1;
+}
+
+.paper-row-pdf {
+    color: #255d6f;
     border: 1px solid #cbd5e1;
     background-color: #e2f3f8;
+    order: 1;
 }
 
 .paper-row-pdf i {
@@ -621,10 +629,26 @@ section strong {
     background-color: #c4e4f2;
 }
 
-.paper-row-authors {
-    margin-bottom: 0.25rem;
-    color: var(--text-secondary);
-    font-size: 0.95rem;
+
+.paper-row-poster {
+    color: #a17ae7;
+    border: 1px solid #a17ae7;
+    background-color: #f5f3fa ;
+    order: 2;
+}
+
+.paper-row-poster:hover {
+    background-color: #e6dcfa;
+}
+
+.paper-row-poster i {
+    font-size: 0.9rem;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
 }
 
 .paper-row-meta {
