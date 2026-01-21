@@ -71,8 +71,14 @@ function initSmoothScrolling() {
     
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
-            e.preventDefault();
             const targetId = this.getAttribute('href');
+
+            // 只对当前页面内的锚点（#xxx）做平滑滚动；其它链接放行正常跳转
+            if (!targetId || !targetId.startsWith('#')) {
+                return;
+            }
+
+            e.preventDefault();
             const targetSection = document.querySelector(targetId);
             
             if (targetSection) {
