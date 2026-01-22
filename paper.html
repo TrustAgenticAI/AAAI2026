@@ -48,9 +48,12 @@
                         </div>
                     </div>
                     <div class="filters-row">
-                        <!-- <div class="filter-buttons">
-                            <button class="filter-btn active" data-filter="all">全部</button>
-                        </div> -->
+                        <div class="filter-buttons">
+                            <button class="filter-btn" data-filter="oral">Oral</button>
+                            <button class="filter-btn" data-filter="poster">Poster</button>
+                            <button class="filter-btn" data-filter="virtual">Poster(Virtual)</button>
+                            
+                        </div>
                         <div class="sort-controls">
                             <label for="sortSelect">Sort by:</label>
                             <select id="sortSelect" class="sort-select">
@@ -82,7 +85,7 @@
                 <div class="paper-list" id="paperList">
                     <!-- 论文 3 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="ViG-LLM: Enhancing Visual Grounding Capabilities in Closed-Box LLMs for Document Information Extraction without OCR Dependencies" 
                         data-authors="Sudhanshu Bhoi"
                         data-abstract="Large Language Models (LLMs) have shown remarkable capabilities in document processing, but their inability to provide visual grounding without OCR dependencies poses significant challenges in business-critical applications. Current solutions either require model fine-tuning or rely on external OCR services, introducing additional costs, latency, and limitations in handling derived information. This paper presents ViG-LLM, a novel framework that enables closed-box LLMs to generate localization information through a multi-agent system combining U-Net-based layout deconstruction with viewport identification tasks. Evaluated on the FATURA and CORD dataset, our framework achieves perfect accuracy over spatial reasoning tuned LLM like Amazon Nova Pro, while demonstrating superior template-specific consistency. The framework maintains robust performance across LLM architectures while reducing operational costs by 60% compared to Textract-based solutions. In real-world document processing applications, the framework helps retain the high reasoning capabilities of the system in document information extraction tasks while improving explainability, reliability and human interaction for information verification. Through human-in-the-loop learning and closed-box prompt alignment techniques, ViG-LLM provides a robust, adaptable solution for visual grounding tasks in document processing workflows.">
@@ -119,7 +122,7 @@
 
                     <!-- 论文 4 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="Multi-Agent Tool-Integrated Policy Optimization" 
                         data-authors="Zhanfeng Mo, Xingxuan Li, Yuntao Chen, Lidong Bing"
                         data-abstract="Large language models (LLMs) increasingly rely on multi-turn tool-integrated planning for knowledge-intensive and complex reasoning tasks.
@@ -162,7 +165,7 @@
 
                     <!-- 论文 5 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="MI9: An Integrated Runtime Governance Framework for Agentic AI" 
                         data-authors="Charles L. Wang, Trisha Singhal, Ameya Kelkar, Jason Tuo"
                         data-abstract="Agentic AI systems capable of reasoning, planning, and acting present governance challenges that differ fundamentally from conventional models. Because these systems can exhibit emergent, unexpected behaviors during execution, many risks cannot be fully anticipated pre-deployment. We present $\textbf{MI9}$, an integrated framework for runtime safety of agentic AI, where safety properties are enforced over live behavior sequences. MI9 provides six coordinated mechanisms: Agency-Risk Index, agent-semantic telemetry, goal-aware authorization monitoring, finite-state conformance engines, goal-conditioned drift detection, and graded containment, that operate model and infrastructure agnostically across heterogeneous agent stacks. MI9 is a framework layer that instruments and governs existing systems to enable systematic, safe deployment at scale. In evaluations over 1,000 diverse multi-domain synthetic scenarios, MI9 achieves high detection with low FPR. By shifting the locus of assurance to runtime safety, MI9 establishes a practical foundation for comprehensive, operational oversight of agentic AI.">
@@ -194,7 +197,7 @@
 
                     <!-- 论文 6 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="Multi-Round Reinforcement Learning with Feedback Reflection for Large Language Models Post-Training" 
                         data-authors="Rundong Wang, Xiaobo Yang, Zhanfeng Mo, Shihong Deng, Shuchang Zhou"
                         data-abstract="While Large language models (LLMs) have demonstrated strong reasoning capabilities, solving complex tasks in interactive environments requires more than single-round responses; they must learn to act strategically, reflect on feedback, and iteratively refine their responses. In this paper, we propose Multi-round Reinforcement Learning (MRRL) for LLMs, a novel post-training framework to complete tasks through strategic interactions with environments while learning to revise their responses by reflecting on and integrating the environment feedback. Beyond environment rewards, our MRRL leverages text-based feedback from the environment, which provides richer and more explicit guidance toward task completion. We formalize the LLM interaction process as a Markov Decision Process (MDP) and derive the proximal policy gradient update for MRRL. To help the LLM reflect on and leverage environmental feedback, we propose the Feedback Reflection Imitation Learning algorithm, which uses an LLM to generate feedback reflection and alleviate the distribution gap for imitation learning from successful trajectories. We conduct extensive experiments across diverse tasks, including text-based games, mathematical problems, search tasks, and logical puzzles, validating that our MRRL achieves stable multi-round RL training for LLMs in various environments. Furthermore, MRRL reduces the number of interaction rounds needed to complete tasks, unleashing the full potential of LLMs in multi-round reasoning.">
@@ -226,7 +229,7 @@
 
                     <!-- 论文 7 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="Peering Behind the Shield: Guardrail Identification in Large Language Models" 
                         data-authors="Ziqing Yang, Yixin Wu, Rui Wen, Michael Backes, Yang Zhang"
                         data-abstract="With the rapid adoption of large language models (LLMs), conversational AI agents have become widely deployed across real-world applications. To enhance safety, these agents are often equipped with guardrails that moderate harmful content. Identifying the guardrails in an agent thus becomes critical for adversaries to understand the system and design guard-specific attacks. In this work, we introduce AP-Test, a novel approach that leverages guard-specific adversarial prompts to detect the identity of guardrails deployed in black-box AI agents. Our method addresses key challenges in this task, including the influence of safety-aligned LLMs and other guardrails, as well as a lack of principled decision-making strategies. AP-Test employs two complementary testing strategies, input and output guard tests, and a new metric, match score, to enable robust identification. Experiments across diverse agents and four open-source guardrails demonstrate that AP-Test achieves perfect classification accuracy in multiple scenarios. Ablation studies further highlight the necessity of our proposed components. Our findings reveal a practical path toward guardrail identification in real-world AI systems.">
@@ -263,7 +266,7 @@
 
                     <!-- 论文 8 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="Provably Reliable Tool-Using LLM Agents: Formal Guarantees on Error Accumulation in the Model Context Protocol (MCP)" 
                         data-authors="Flint Xiaofeng Fan, Cheston Tan, Roger Wattenhofer, Yew-Soon Ong"
                         data-abstract="As AI agents powered by large language models (LLMs) increasingly use external tools for high-stakes decisions, a critical reliability question arises: how do errors propagate across sequential tool calls? We introduce the first theoretical framework for analyzing error accumulation in Model Context Protocol (MCP) agents, proving that cumulative distortion exhibits linear growth and high-probability deviations bounded by $O(\sqrt{T})$. This concentration property ensures predictable system behavior and rules out exponential failure modes. We develop a hybrid distortion metric combining discrete fact matching with continuous semantic similarity, then establish martingale concentration bounds on error propagation through sequential tool interactions. Experiments across Qwen2-7B, Llama-3-8B, and Mistral-7B validate our theoretical predictions, showing empirical distortion tracks the linear trend with deviations consistently within $O(\sqrt{T})$ envelopes. Key findings include: semantic weighting reduces distortion by 80\%, and periodic re-grounding approximately every 8 steps suffices for error control. We translate these concentration guarantees into actionable deployment principles for trustworthy agent systems.">
@@ -300,7 +303,7 @@
 
                     <!-- 论文 9 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="Trajectory Guard - A Lightweight, Sequence-Aware Model for Real-Time Anomaly Detection in Agentic AI" 
                         data-authors="Laksh Advani"
                         data-abstract="Autonomous LLM agents generate multi-step action plans that can fail due to contextual misalignment or structural incoherence. Existing anomaly detection methods are ill-suited for this challenge: mean-pooling embeddings dilutes anomalous steps, while contrastive-only approaches ignore sequential structure. Standard unsupervised methods on pre-trained embeddings achieve F1-scores no higher than 0.69. We introduce Trajectory Guard, a Siamese Recurrent Autoencoder with a hybrid loss function that jointly learns task-trajectory alignment via contrastive learning and sequential validity via reconstruction. This dual objective enables unified detection of both &quot;wrong plan for this task&quot; and &quot;malformed plan structure.&quot; On benchmarks spanning synthetic perturbations and real-world failures from security audits (RAS-Eval) and multi-agent systems (Who\&amp;When), we achieve F1-scores of 0.88--0.94 on balanced sets and recall of 0.86--0.92 on imbalanced external benchmarks. At 32 ms inference latency, our approach runs 17--27$\times$ faster than LLM Judge baselines, enabling real-time safety verification in production deployments.">
@@ -337,7 +340,7 @@
 
                     <!-- 论文 10 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="Towards Trustworthy Multi-Turn LLM Agents via Behavioral Guidance" 
                         data-authors="Gonca Gürsun"
                         data-abstract="Large Language Models (LLMs) demonstrate strong reasoning and generation abilities, yet their behavior in multi-turn tasks often lacks reliability and verifiability.  
@@ -373,7 +376,7 @@ We show that as the agent interacts with the environment. These components co-ev
 
                     <!-- 论文 11 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="Teach a Reward Model to Correct Itself: Reward Guided Adversarial Failure Discovery for Robust Reward Modeling" 
                         data-authors="Pankayaraj Pathmanathan, Furong Huang"
                         data-abstract="Reward models (RMs) trained from human preferences are central to aligning large language models, yet they often break under distribution shift or targeted perturbations. Existing failure discovery methods rely on prior knowledge of preference attributes and therefore do not scale to new models or data. We introduce a preference distribution agnostic procedure that uses the reward model itself to guide controlled decoding toward mis specified responses while preserving the underlying preference class. Building on this discovery mechanism, we propose REFORM, a self improving RM framework that (i) searches for class consistent but reward inconsistent variants and (ii) fine tunes the RM on a small, targeted augmentation of these failures. On Anthropic Helpful Harmless and PKU Beavertails, REFORM consistently improves robustness without degrading in distribution reward quality across different models (e.g., Mistral-7B and Qwen-14B), with an average improvement of 35%_45%. Further, across Best of N sampling, PPO, and DPO, REFORM preserves downstream generation quality and reduces spurious correlations. Our results show that RMs can serve as their own adversary to expose and fix blind spots, yielding robust alignment without manual attribute priors or large scale relabeling.">
@@ -405,7 +408,7 @@ We show that as the agent interacts with the environment. These components co-ev
 
                     <!-- 论文 13 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="Blue Teaming Function-Calling Agents" 
                         data-authors="Greta Dolcetti, Giulio Zizzo, Sergio Maffeis"
                         data-abstract="We present an experimental evaluation that assesses the robustness of four open source LLMs claiming function-calling
@@ -444,7 +447,7 @@ how these models are not safe by default, and how the defences are not yet emplo
 
                     <!-- 论文 14 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="&quot;Are We Done Yet?&quot;: A Vision-Based Judge for Autonomous Task Completion of Computer Use Agents" 
                         data-authors="Marta Sumyk, Oleksandr Kosovan"
                         data-abstract="Computer Use Agents (CUAs) are designed to autonomously operate digital interfaces, yet they often fail to reliably determine whether a given task has been successfully completed. We present an autonomous evaluation and feedback framework that leverages Vision__anguage Models (VLMs) to assess task completion directly from screenshots and task descriptions. Our dataset covers $42$ built-in macOS applications and $1{,}260$ human-labeled tasks, covering a wide range of scenarios. Our framework achieves up to $73\%$ percent classification accuracy in task success detection and yields an average relative improvement of $27\%$ percent in the overall task success rate of CUAs when evaluator feedback is applied. These results demonstrate that vision-based evaluation can serve as an actionable feedback mechanism that significantly improves the reliability and self-correction of autonomous computer-use agents.">
@@ -481,7 +484,7 @@ how these models are not safe by default, and how the defences are not yet emplo
 
                     <!-- 论文 15 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="A Collaborative Multi-Agent Framework for Jailbreaking with RL-Based Dynamic Prompting" 
                         data-authors="Azka Ikramullah, Kyunghyun Lee, Abdul Majeed, Seong Oun Hwang"
                         data-abstract="Evaluating large language models (LLMs) under adversarial prompting remains difficult: heuristic and genetic red-teaming pipelines require heavy hand-tuning and are query-inefficient, while recent reinforcement learning based attacks often optimize sparse or binary rewards (e.g., pass/fail, cosine similarity), yielding unstable training and low diversity. In this paper, we present a rating-based adversarial RL framework that formulates jailbreak discovery as dense-reward optimization. The proposed framework closes the loop among (i) a Soft Actor--Critic (SAC) agent attacker with hybrid discrete--continuous actions (operator family + style sliders), (ii) a controllable rewriter LLM that preserves intent while injecting surface diversity and stealth, and (iii) a calibrated judge LLM that assigns five absolute ratings---\emph{Success, Stealth, Novelty, Efficiency, Impact}. A curriculum-weighted aggregation converts these ratings into a continuous reward, and stratified replay, early-exit, and de-duplication further improve sample and query efficiency. We instantiate the judge as LLaMA-3-Instruct and the rewriter as Yi-9B, and evaluate across three target models (LLaMA-3, Qwen-2.5-7B, Mistral-7B) using the SORRY-Bench dataset for training seeds/priors and the out-of-distribution harmful subset of the JailbreakBench dataset for testing. Empirically, our framework achieves up to a 15\% higher attack success rate while maintaining greater prompt novelty and stealth. These results indicate that dense, interpretable rating signals paired with off-policy optimization provide a scalable foundation for safety-aligned, query-efficient jailbreak evaluation.">
@@ -518,7 +521,7 @@ how these models are not safe by default, and how the defences are not yet emplo
 
                     <!-- 论文 16 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="AEMA: Verifiable Evaluation Framework for Trustworthy and Controlled Agentic LLM Systems" 
                         data-authors="Yen-Ting Lee, KEERTHI KONERU, Zahra Moslemi, Sheethal Kumar, Ramesh Radhakrishnan"
                         data-abstract="Evaluating large language model (LLM)-based multi-agent systems remains a critical challenge, as these systems must exhibit reliable coordination, transparent decision-making, and verifiable performance across evolving tasks. Existing evaluation approaches often limit themselves to single-response scoring or narrow benchmarks, which lack stability, extensibility, and automation when deployed in enterprise settings at multi-agent scale. We present \textbf{AEMA (Adaptive Evaluation Multi-Agent)}, a process-aware and auditable framework that plans, executes, and aggregates multi-step evaluations across heterogeneous agentic workflows under human oversight. Compared to a single LLM-as-a-Judge, AEMA achieves greater stability, human alignment, and traceable records that support accountable automation. Our results on enterprise-style agent workflows simulated using realistic business scenarios demonstrate that AEMA provides a transparent and reproducible pathway toward responsible evaluation of LLM-based multi-agent systems.">
@@ -555,7 +558,7 @@ how these models are not safe by default, and how the defences are not yet emplo
 
                     <!-- 论文 17 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="Beyond Success Rate: Benchmarking Robustness in Tool-Using Language Agents" 
                         data-authors="Kristina Lewandowska"
                         data-abstract="The deployment of tool-using language agents in real-world scenarios is hindered by their brittleness in the face of unreliable tools and environments. While current benchmarks focus on task success in idealized conditions, they fail to measure robustness__he ability to handle and recover from failures. This paper introduces a novel benchmarking framework that moves beyond success rate by systematically injecting a taxonomy of realistic faults into established environments like ToolBench and WebArena. We evaluate state-of-the-art agents on new metrics such as Recovery Rate and Unrecoverable Failure Rate, revealing a significant robustness gap. Our results show that even powerful models like GPT-4 Turbo struggle with basic errors, with recovery rates below 60%. Furthermore, we demonstrate that adversarial fine-tuning on our synthetic failure data can significantly improve robustness, providing a clear pathway for developing more reliable and trustworthy agentic AI systems.">
@@ -587,7 +590,7 @@ how these models are not safe by default, and how the defences are not yet emplo
 
                     <!-- 论文 18 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="Optimizing AI Agent Attacks With Synthetic Data" 
                         data-authors="Chloe R Loughridge, Paul Colognese, Avery Griffin, Tyler Tracy, Jonathan Kutasov, Joe Benton"
                         data-abstract="As AI deployments become more complex and high-stakes, it becomes increasingly important to be able to estimate their risk. AI control is one framework for doing so. However, good control evaluations require eliciting strong attack policies. This can be challenging in complex agentic environments where compute constraints leave us data-poor. In this work, we show how to optimize attack policies in SHADE-Arena, a dataset of diverse realistic control environments. We do this by decomposing attack capability into five constituent skills -- suspicion modeling, attack selection, plan synthesis, execution and subtlety -- and optimizing each component individually. To get around the constraint of limited data, we develop a probabilistic model of attack dynamics, optimize our attack hyperparameters using this simulation, and then show that the results transfer to SHADE-Arena. This results in a substantial improvement in attack strength, reducing safety score from a baseline of 0.87 to 0.41 using our scaffold.">
@@ -619,7 +622,7 @@ how these models are not safe by default, and how the defences are not yet emplo
 
                     <!-- 论文 19 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="Certifying LLM Agent Risks in Diverse Scenarios" 
                         data-authors="Yuhao Zhang, Mintong Kang"
                         data-abstract="Large language models (LLMs)-powed agents have demonstrated impressive generative capabilities but remain susceptible to hallucinations, factual inaccuracy, and policy violations. Quantifying and certifying these generation risks is fundamental to ensuring their trustworthy deployment. This paper proposes a unified statistical framework for \emph{certifying LLM agent generation risks} under finite samples. We formalize risk as a bounded functional of the model__ conditional distribution and develop three complementary certification paradigms: (1) \textbf{Concentration-based certification}, which leverages classical inequalities to bound population risk; (2) \textbf{Conformal generation risk certification}, which provides distribution-free, finite-sample guarantees using conformal prediction; and (3) \textbf{Online conformal certification}, which extends these guarantees to temporally dependent or adaptive settings. We establish theoretical coverage guarantees for each paradigm and empirically evaluate them across factuality, toxicity, and policy-violation benchmarks. Our results demonstrate that conformal and online certification achieve valid and adaptive risk coverage while maintaining computational efficiency, paving the way toward practical, provably safe LLM agent deployment.">
@@ -651,7 +654,7 @@ how these models are not safe by default, and how the defences are not yet emplo
 
                     <!-- 论文 20 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="oral" 
                         data-title="PSM: Prompt Sensitivity Minimization via LLM-Guided Black-Box Optimization" 
                         data-authors="Hussein Jawad, Nicolas J-B. Brunel"
                         data-abstract="System prompts are critical for guiding the behavior of Large Language Models (LLMs), yet they often contain proprietary logic or sensitive information, making them a prime target for extraction attacks. Adversarial queries can successfully elicit these hidden instructions, posing significant security and privacy risks. Existing defense mechanisms frequently rely on heuristics, incur substantial computational overhead, or are inapplicable to models accessed via black-box APIs. This paper introduces a novel framework for hardening system prompts through shield appending, a lightweight approach that adds a protective textual layer to the original prompt. Our core contribution is the formalization of prompt hardening as a utility-constrained optimization problem. We leverage an LLM-as-optimizer to search the space of possible SHIELDs, seeking to minimize a leakage metric derived from a suite of adversarial attacks, while simultaneously preserving task utility above a specified threshold, measured by semantic fidelity to baseline outputs. This black-box, optimization-driven methodology is lightweight and practical, requiring only API access to the target and optimizer LLMs. We demonstrate empirically that our optimized SHIELDs significantly reduce prompt leakage against a comprehensive set of extraction attacks, outperforming established baseline defenses without compromising the model&#x27;s intended functionality. Our work presents a paradigm for developing robust, utility-aware defenses in the escalating landscape of LLM security. The code is made public on the following link: \url{https://github.com/psm-defense/psm}">
@@ -688,7 +691,7 @@ how these models are not safe by default, and how the defences are not yet emplo
 
                     <!-- 论文 21 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="Evaluating Control Protocols for Untrusted AI Agents" 
                         data-authors="Jonathan Kutasov, Chloe R Loughridge, Yuqi Sun, Henry Sleight, Buck Shlegeris, Tyler Tracy, Joe Benton"
                         data-abstract="As AI systems become more capable and widely deployed as agents, ensuring their safe operation becomes critical. AI control offers one approach to mitigating the risk from untrusted AI agents by monitoring their actions and intervening or auditing when necessary. Evaluating the safety of these protocols requires understanding both their effectiveness against current attacks and their robustness to adaptive adversaries. In this work, we systematically evaluate a range of control protocols in SHADE-Arena, a dataset of diverse agentic environments. First, we evaluate blue team protocols, including deferral to trusted models, resampling, and deferring on critical actions, against a default attack policy. We find that resampling for incrimination and defering on critical actions perform best, increasing safety from 50\% to 96\%. We then iterate on red team strategies against these protocols and find that attack policies with additional affordances, such as knowledge of when resampling occurs or the ability to simulate monitors, can substantially improve attack success rates against our resampling strategy, decreasing safety to 17\%. However, deferring on critical actions is highly robust to even our strongest red team strategies, demonstrating the importance of denying attack policies access to protocol internals.">
@@ -720,7 +723,7 @@ how these models are not safe by default, and how the defences are not yet emplo
 
                     <!-- 论文 22 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="Real-Time Trust Verification for Safe Agentic Actions using TrustBench" 
                         data-authors="Tavishi Sharma, Vinayak Sharma, Pragya Sharma"
                         data-abstract="As large language models evolve from conversational assistants to autonomous agents, ensuring trustworthiness requires a fundamental shift from post-hoc evaluation to real-time action verification. Current frameworks like AgentBench evaluate task completion, while TrustLLM and HELM assess output quality after generation. However, none of these prevent harmful actions during agent execution. We present TrustBench, a dual-mode framework that (1) benchmarks trust across multiple dimensions using both traditional metrics and LLM-as-a-Judge evaluations, and (2) provides a toolkit agents invoke before taking actions to verify safety and reliability. Unlike existing approaches, TrustBench intervenes at the critical decision point: after an agent formulates an action but before execution. Domain-specific plugins encode specialized safety requirements for healthcare, finance, and technical domains.
@@ -758,7 +761,7 @@ Across multiple agentic tasks, TrustBench reduced harmful actions by 87%. Domain
 
                     <!-- 论文 23 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="oral" 
                         data-title="Lightweight and Faithful Visual Condition Checking in Behavior Trees via Expert-Regularized Reinforcement Learning" 
                         data-authors="Hyosik Moon, Eldan Cohen"
                         data-abstract="Behavior trees provide a transparent and modular structure for encoding expert-designed policies, enabling interpretable decision-making in complex tasks. Yet, applying behavior trees to high-dimensional perceptual inputs such as images or language is challenging as defining symbolic predicates over raw perceptual data is non-trivial. While state-of-the-art large multimodal models (such as vision-language models) can overcome this issue by utilizing natural language queries over perceptual inputs, they incur high computational cost, making them unsuitable for many applications. Imitation learning offers a way to distill these experts into compact models, though it requires extensive supervision. In contrast, reinforcement learning reduces the need for costly supervision but risks misalignment of condition nodes with their intended semantics as well as poor credit assignment. To address these challenges, we introduce CERL (Condition-node Expert-regularized Reinforcement Learning), a framework that leverages expert-regularized reinforcement learning to preserve semantic faithfulness, while employing a factorized policy that aggregates sequential condition-node decisions into a single decision unit to alleviate credit assignment challenges. Experiments across seven tasks from the GymCards, FrozenLake, and BabyAIText suites demonstrate that our framework outperforms pure imitation learning or reinforcement learning baselines, retains strong agreement with expert decisions, and achieves substantial gains in inference speed and model size over expert models.">
@@ -795,7 +798,7 @@ Across multiple agentic tasks, TrustBench reduced harmful actions by 87%. Domain
 
                     <!-- 论文 24 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="The Trust Paradox: When Over-Alignment Reduces Human Trust in Agentic LLMs" 
                         data-authors="Gokul Srinath Seetha Ram"
                         data-abstract="We present evidence for a Trust Paradox in AI alignment: increasing alignment intensity beyond optimal levels actually reduces human trust in AI systems. Through 120 dialogues across four large language models and five decision-making scenarios, we demonstrate that peak trust occurs at minimal alignment (α = 0.0), while over-alignment (α &gt; 0.6) reduces trust. Our analysis reveals that authenticity strongly correlates with trust (r = 0.771), whereas obedience correlates negatively (r = _0.450). This counterintuitive pattern implies that maximizing alignment does not necessarily maximize safety or reliability. We define quantitative trust metrics__ncluding authenticity, obedience, and a controlled dissent coefficient__nd show that trust follows a non-monotonic curve with respect to alignment intensity. The findings suggest that optimal alignment requires balancing safety constraints with perceived authenticity rather than maximizing compliance. This has major implications for designing trustworthy agentic AI systems, emphasizing the need for calibrated alignment strategies that sustain both robustness and human trust.">
@@ -827,7 +830,7 @@ Across multiple agentic tasks, TrustBench reduced harmful actions by 87%. Domain
 
                     <!-- 论文 25 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="ShieldBench: A Comprehensive Benchmark for Evaluating the Persistence of LLM Safety Interventions" 
                         data-authors="Mert Ogul, Rishitha Voleti, Shanduojiao Jiang"
                         data-abstract="Large Language Models (LLMs) are increasingly relied upon for information access and decision support, yet they continue to struggle with distinguishing between benign and harmful prompts. Existing evaluation protocols fall short: some rely on unrealistic assumptions, while others provide only partial assessments of model safety. We introduce ShieldBench, a benchmark designed to evaluate not only immediate safety compliance but also the persistence of safety interventions under realistic usage conditions. Our benchmark incorporates a suite of recent weight-space editing techniques (Task-Vector Negation, Diverse Inversion, Guided Distortion, AlphaEdit, SafetyLora, and TaLoS Sparsity) applied across multiple open-source models and diverse safety datasets like HarmBench. By evaluating performance under both greedy and sampling-based decoding, we capture conditions closer to real world deployments. Our results reveal persistence depends critically on weight-space geometry, providing actionable insights for building durable LLM safety.">
@@ -859,7 +862,7 @@ Across multiple agentic tasks, TrustBench reduced harmful actions by 87%. Domain
 
                     <!-- 论文 27 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="Improving Physics Reasoning in Large Language Models Using Mixture of Refinement Agents" 
                         data-authors="Raj Jaiswal, Dhruv Jain, Harsh Parimal Popat, Abhishek Dharmadhikari, Atharva Marathe, Avinash Anand, Shin&#x27;ichi Satoh, Rajiv Ratn Shah"
                         data-abstract="Large Language Models (LLMs) demonstrate remarkable capabilities in various reasoning tasks. However, they encounter significant challenges when it comes to scientific reasoning, particularly in physics, which requires not only mathematical reasoning but also factual and conceptual understanding. When addressing complex physics problems, LLMs typically face three key issues: problem miscomprehension, incorrect concept application, and computational errors. While each of these problems can be addressed individually, there is a need for a generalized approach that can tackle all three issues simultaneously. To address this, we introduce Mixture of Refinement Agents (MoRA), a novel agentic refinement framework that iteratively refines the LLM generated base solution by correcting the aforementioned errors, resulting in a significant performance improvement for open-source LLMs. Our approach aims to bridge the gap between open-source LLMs and GPT-4o by utilizing the latter as error identifier to guide these refinement agents. We evaluate our approach on the SciEval and MMLU subsets along with our own physics dataset (PhysicsQA). MoRA significantly improves the performance of Llama-3-70B and Gemma-2-27B on these datasets, achieving up to a 16% increase in final answer accuracy.">
@@ -896,7 +899,7 @@ Across multiple agentic tasks, TrustBench reduced harmful actions by 87%. Domain
 
                     <!-- 论文 28 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="The Multi-Agent Off-Switch Game" 
                         data-authors="Akash Agrawal, Soroush Ebadian, Lewis Hammond"
                         data-abstract="The off-switch game framework has been instrumental in understanding corrigibility _ the property that AI agents should allow human oversight and intervention. In single-agent settings, uncertainty about human preferences naturally incentivizes agents to defer to human judgment. However, as AI systems increasingly operate in multi-agent environments, a crucial question arises: does corrigibility compose across multiple agents? We introduce the multi-agent off-switch game and demonstrate that individually corrigible agents can become collectively incorrigible when strategic interactions are considered. Through formal analysis and illustrative examples, we show that corrigibility is not compositional and identify conditions under which group incorrigibility emerges. Our results highlight fundamental challenges for AI safety in multi-agent settings and suggest the need for new approaches that explicitly address collective dynamics.">
@@ -928,42 +931,16 @@ Across multiple agentic tasks, TrustBench reduced harmful actions by 87%. Domain
 
                     <!-- 论文 29 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="virtual" 
                         data-title="Building Real-time Awareness of Out-of-distribution in Trajectory Prediction for Autonomous Vehicles" 
                         data-authors="Tongfei Guo, Taposh Banerjee, Lili Su"
-                        data-abstract="Ensuring trust and control in autonomous systems requires
-that they remain robust and reliable when facing the unpre-
-dictable complexity of the real world. In the context of agen-
-tic AI for autonomous driving, accurate trajectory prediction
-is foundational to safety-critical decision-making. However,
-due to discrepancies between training data and real-world
-conditions encountered during inference, even well-trained
-machine learning models may produce unreliable predictions.
-Such sim-to-real gaps (also known as imperfect training data)
-may be unavoidable due to the overwhelming complexity of
-data annotation and environment uncertainties. To support
-verifiable and trustworthy autonomy, we present a principled
-and computationally efficient framework for detecting when
-a model__ predictions deviate from expected, in-distribution
-behavior. Leveraging the intuition that in-distribution (ID)
-scenes exhibit error patterns similar to training data, while
-out-of-distribution (OOD) scenes do not, we formulate OOD
-detection as a quickest change-point detection problem, en-
-abling timely recognition of subtle or deceptive shifts in driv-
-ing scenes that may compromise reliability. We address the
-challenging settings where the OOD scenes are deceptive,
-meaning that they are not easily detectable by human intu-
-itions. Our solutions can handle the occurrence of OOD at
-any time during trajectory prediction inference. Experimental
-results on multiple real-world datasets demonstrate the effec-
-tiveness of our methods.">
+                        data-abstract="Ensuring trust and control in autonomous systems requires that they remain robust and reliable when facing the unpredictable complexity of the real world. In the context of agentic AI for autonomous driving, accurate trajectory prediction is foundational to safety-critical decision-making. However, due to discrepancies between training data and real-world conditions encountered during inference, even well-trained machine learning models may produce unreliable predictions. Such sim-to-real gaps (also known as imperfect training data) may be unavoidable due to the overwhelming complexity of data annotation and environment uncertainties. To support verifiable and trustworthy autonomy, we present a principled and computationally efficient framework for detecting when a model's predictions deviate from expected, in-distribution behavior. Leveraging the intuition that in-distribution (ID) scenes exhibit error patterns similar to training data, while out-of-distribution (OOD) scenes do not, we formulate OOD detection as a quickest change-point detection problem, enabling timely recognition of subtle or deceptive shifts in driving scenes that may compromise reliability. We address the challenging settings where the OOD scenes are deceptive, meaning that they are not easily detectable by human intuitions. Our solutions can handle the occurrence of OOD at any time during trajectory prediction inference. Experimental results on multiple real-world datasets demonstrate the effectiveness of our methods.">
                         <div class="paper-row-main">
                             <div class="paper-row-title-wrapper">
                                 <h3 class="paper-row-title">
                                     Building Real-time Awareness of Out-of-distribution in Trajectory Prediction for Autonomous Vehicles
                                 </h3>
                                 <div class="link">
-                                    
                                     <a href="AAAI-Workshop/29.pdf" class="paper-row-pdf" target="_blank" aria-label="View PDF">
                                         <i class="fas fa-file-pdf"></i>
                                         <span>PDF</span>
@@ -973,7 +950,11 @@ tiveness of our methods.">
                                         <i class="fas fa-image"></i>
                                         <span>Poster</span>
                                     </a>
-                                    
+
+                                    <a href="https://drive.google.com/file/d/16wcJfLdOnrJwBwPb9CzVF1qZxzLzOl4v/view?usp=drive_link" class="paper-row-video" target="_blank" aria-label="View Video">
+                                        <i class="fas fa-video"></i>
+                                        <span>Video</span>
+                                    </a>
                                 </div>
                             </div>
                             <p class="paper-row-authors">
@@ -990,7 +971,7 @@ tiveness of our methods.">
 
                     <!-- 论文 30 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="Agent-SafetyBench: Evaluating the Safety of LLM Agents" 
                         data-authors="Zhexin Zhang, Shiyao Cui, Yida Lu, Jingzhuo Zhou, Junxiao Yang, Hongning Wang, Minlie Huang"
                         data-abstract="As large language models (LLMs) are increasingly deployed as agents, their integration into interactive environments and tool use introduce new safety challenges beyond those associated with the models themselves. However, the absence of comprehensive benchmarks for evaluating agent safety presents a significant barrier to effective assessment and further improvement. In this paper, we introduce Agent-SafetyBench, a comprehensive benchmark designed to evaluate the safety of LLM agents. Agent-SafetyBench encompasses 349 interaction environments and 2,000 test cases, evaluating 8 categories of safety risks and covering 10 common failure modes frequently encountered in unsafe interactions. Our evaluation of 16 popular LLM agents reveals a concerning result: none of the agents achieves a safety score above 60\%. This highlights significant safety challenges in LLM agents and underscores the considerable need for improvement. Through failure mode and helpfulness analysis, we summarize two fundamental safety defects in current LLM agents: lack of robustness and lack of risk awareness. Furthermore, our findings suggest that reliance on defense prompts alone may be insufficient to address these safety issues, emphasizing the need for more advanced and robust strategies.">
@@ -1022,7 +1003,7 @@ tiveness of our methods.">
 
                     <!-- 论文 31 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="Trustworthy AI in the Agentic Lakehouse: from Concurrency to Governance" 
                         data-authors="Jacopo Tagliabue, Federico Bianchi, Ciro Greco"
                         data-abstract="Even as AI capabilities improve, most enterprises do not consider agents trustworthy enough to work on production data. In this paper, we argue that the path to trustworthy agentic workflows begins with solving the infrastructure problem first: traditional lakehouses are not suited for agent access patterns, but if we design one around transactions, governance follows. In particular, we draw an operational analogy to MVCC in databases and show why a direct transplant fails in a decoupled, multi-language setting. We then propose an agent-first design, Bauplan, that reimplements data and compute isolation in the lakehouse. We conclude by sharing a reference implementation of a self-healing pipeline, which couples agent reasoning with all the desired guarantees for correctness and trust.">
@@ -1059,7 +1040,7 @@ tiveness of our methods.">
 
                     <!-- 论文 32 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="Demonstrating specification gaming in reasoning models" 
                         data-authors="Alexander Bondarenko, Denis Volk, Dmitrii Volkov, Jeffrey Ladish"
                         data-abstract="We demonstrate LLM agent specification gaming by instructing models to win against a chess engine. We find reasoning models like OpenAI o3 and DeepSeek R1 will often hack the benchmark by default, while language models like GPT-4o and Claude 3.5 Sonnet need to be told that normal play won&#x27;t work to hack.
@@ -1097,7 +1078,7 @@ We improve upon prior work like (Hubinger et al., 2024; Meinke et al., 2024; Wei
 
                     <!-- 论文 33 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="Proactive Interference Reveals Working Memory Limits in LLMs Beyond Context Length" 
                         data-authors="Chupei Wang, Jiaqiu Vince Sun"
                         data-abstract="Information retrieval in Large Language Models (LLMs) is increasingly recognized as intertwined with generation capabilities rather than mere lookup. While longer contexts are often assumed to improve retrieval, the effects of intra-context interference remain understudied. To address this, we adapt the proactive interference (PI) paradigm from cognitive science, where earlier information disrupts recall of newer updates. In humans, susceptibility to such interference is inversely linked to working memory capacity. We introduce PI-LLM, an evaluation that sequentially streams co-referenced key__alue updates and queries only the final values. Although these final values are clearly positioned just before the query, LLM retrieval accuracy declines log-linearly toward zero as co-referenced interference accumulates; errors arise from retrieving previously overwritten values. Attempts to mitigate interference via prompt engineering (e.g., instructing models to ignore earlier input) yield limited success. These findings reveal a fundamental constraint on LLMs_ ability to disentangle interference and flexibly manipulate information, suggesting a working memory bottleneck beyond mere context access.
@@ -1131,7 +1112,7 @@ For Agentic systems, reliable operation hinges on reconciling past and present s
 
                     <!-- 论文 34 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="oral" 
                         data-title="Federated Agent Reinforcement Learning" 
                         data-authors="Canyu Chen, Kangyu Zhu, Zhaorun Chen, Zhanhui Zhou, Shizhe Diao, Yiping Lu, Tian Li, Manling Li, Dawn Song"
                         data-abstract="Autonomous AI Agents powered by LLMs have shown remarkable abilities in diverse domains. However, the training process typically require centralized collection of large amounts of real-world user data, posing substantial privacy and regulatory concerns. To this end, we explore a new decentralized training paradigm, namely FedAgent (Federated Agent Reinforcement Learning), which enables collaborative learning of AI agents across distributed clients without sharing local data. Moreover, we construct the first decentralized agent learning environment FedAgentGym, which includes four types of LLM agents, two application scenarios (WebShop and ALFWorld), three variations of decentralized settings, and three newly defined heterogeneity challenges (Preference Heterogeneity, Coverage Heterogeneity, and Hardness Heterogeneity), to systematically investigate its effectiveness and impact factors. Extensive theoretical and empirical studies show that FedAgent can have comparable performance to the centralized training paradigm and exhibit strong robustness against heterogeneities, which shows the feasibility of training AI agents without sacrificing data privacy. The code is available.">
@@ -1163,7 +1144,7 @@ For Agentic systems, reliable operation hinges on reconciling past and present s
 
                     <!-- 论文 37 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="Can Linear Attributions Explain Nonlinear LLMs?" 
                         data-authors="Vishal Pramanik, Maisha Maliha, Nathaniel D. Bastian, Sumit Kumar Jha"
                         data-abstract="Attribution methods seek to explain language model predictions by quantifying the contribution of input tokens to generated outputs. However, most existing techniques are designed for encoder-based architectures and rely on linear approximations that fail to capture the causal and semantic complexities of autoregressive generation in decoder-only models. To address these limitations, we propose Hessian-Enhanced Token Attribution (HETA), a novel attribution framework tailored for decoder-only language models. HETA combines three complementary components: a semantic transition vector that captures token-to-token influence across layers, Hessian-based sensitivity scores that model second-order effects, and KL divergence to measure information loss when tokens are masked. This unified design produces context-aware, causally faithful, and semantically grounded attributions. Additionally, we introduce a curated benchmark dataset for systematically evaluating attribution quality in generative settings. Empirical evaluations across multiple models and datasets demonstrate that HETA consistently outperforms existing methods in attribution faithfulness and alignment with human annotations, establishing a new standard for interpretability in autoregressive language models.">
@@ -1200,7 +1181,7 @@ For Agentic systems, reliable operation hinges on reconciling past and present s
 
                     <!-- 论文 38 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="Drift No More? Context Equilibria in Multi-Turn LLM Interactions" 
                         data-authors="Vardhan Dongre, Ryan A. Rossi, Viet Dac Lai, Seunghyun Yoon, Dilek Hakkani-Tür, Trung Bui"
                         data-abstract="Large Language Models (LLMs) excel at single-turn tasks such as instruction following and summarization, yet real-world deployments require sustained multi-turn interactions where user goals and conversational context persist and evolve. A recurring challenge in this setting is context drift: the gradual divergence of a model__ outputs from goal-consistent behavior across turns. Unlike single-turn errors, drift unfolds temporally and is poorly captured by static evaluation metrics. In this work, we present a study of context drift in multi-turn interactions and propose a simple dynamical framework to interpret its behavior. We formalize drift as the turn-wise KL divergence between the token-level predictive distributions of the test model and a goal-consistent reference model, and propose a recurrence model that interprets its evolution as a bounded stochastic process with restoring forces and controllable interventions. We instantiate this framework in both synthetic long-horizon rewriting tasks and realistic user__gent simulations, such as in tau-bench, measuring drift for several open-weight LLMs that are used as user simulators. Our experiments consistently reveal stable, noise-limited equilibria rather than runaway degradation, and demonstrate that simple reminder interventions reliably reduce divergence in line with theoretical predictions. Together, these results suggest that multi-turn drift can be understood as a controllable equilibrium phenomenon rather than as inevitable decay, providing a foundation for studying and mitigating context drift in extended interactions.">
@@ -1232,7 +1213,7 @@ For Agentic systems, reliable operation hinges on reconciling past and present s
 
                     <!-- 论文 40 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="LENS: Learning Architecture Navigator for LLM Agentic Systems" 
                         data-authors="Guancheng Wan, Jiayi Yang, Mengting Li"
                         data-abstract="Large Language Model (LLM)-empowered multi-agent systems extend the cognitive boundaries of individual agents through disciplined collaboration, while constructing these systems often requires labor-intensive manual designs. A frontier effort to automate this process is to optimize an Agentic Supernet, a probabilistic distribution of architectures from which query-dependent workflows can be dynamically sampled. However, while this paradigm allows for dynamic resource allocation, its underlying optimization process presents a critical performance bottleneck: inconsistent architectural feedback suppresses reliable credit assignment and prematurely narrows exploration, missing innovative and efficient designs. To address this, we introduce **LENS** (**L**earning-**E**nhanced **N**eural **S**earch for Agentic Workflows), a dual-module framework that systematically resolves both challenges. The *Adaptive Diversity Module (ADM)* maintains comprehensive exploration across the architectural space, while the *Retrospective Guidance Module (RGM)* learns from historical evaluations to provide stable search direction. By decoupling diversity maintenance from directional guidance, LENS achieves robust search that discovers higher-utility, lower-cost configurations. Comprehensive evaluations across diverse benchmarks demonstrate that LENS is: **(I) higher-performing**, achieving up to 13.63% accuracy improvement on challenging benchmarks with the same search budget; **(II) more sample-efficient**, requiring only 30 training samples to outperform baselines trained on much larger datasets; and **(III) more cost-effective**, reducing inference token consumption by 7.8% while significantly improving performance.">
@@ -1264,7 +1245,7 @@ For Agentic systems, reliable operation hinges on reconciling past and present s
 
                     <!-- 论文 41 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="RAAS: Relative Architecture Adaptive Search for Agentic Supernet Optimization" 
                         data-authors="Jiayi Yang, Mengting Li, Guancheng Wan"
                         data-abstract="Large Language Model (LLM) agentic systems solve complex tasks through coordinated workflows, but designing them is a fragile, labor-intensive process. The **Agentic Supernet** paradigm automates this by optimizing a probabilistic space of architectures. However, its reliance on *absolute* performance scores creates a critical flaw: the learning signal entangles an architecture&#x27;s intrinsic merit with the extrinsic difficulty of the evaluation query. This entanglement leads to unstable search, where simple queries misleadingly inflate weak designs and difficult queries unfairly suppress strong ones. To resolve this, we introduce **RAAS** (Relative Architecture Adaptive Search), a framework that disentangles architectural quality from problem difficulty. Instead of relying on noisy absolute scores, RAAS evaluates a cohort of candidate architectures head-to-head on the *same query*. By learning from their **relative advantage**, it synthesizes a stable, context-fair learning signal that isolates true architectural superiority. This intra-group, relative assessment provides clear and consistent guidance for the search process. Extensive experiments across six benchmarks show that RAAS not only discovers significantly more performant architectures__mproving HumanEval pass@1 from 92.23% to 96.31% and MATH accuracy from 52.08% to 60.87%__ut also does so with greater sample efficiency and stability, demonstrating that disentangled, relative evaluation is key to robust agentic architecture search.">
@@ -1296,7 +1277,7 @@ For Agentic systems, reliable operation hinges on reconciling past and present s
 
                     <!-- 论文 42 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="JSPLIT: A Taxonomy-based Solution for Prompt Bloating in Model Context Protocol" 
                         data-authors="Emanuele Antonioni, Stefan Markovic, Anirudha Shankar, Jaime Carreira Bernardo, Lovro Markovic, Silvia Pareti, Benedetto Proietti"
                         data-abstract="AI systems are continually evolving and advancing, and user expectations are concurrently increasing, with a growing demand for interactions that go beyond simple text-based interaction with Large Language Models (LLMs). Today__ applications often require LLMs to interact with external tools, marking a shift toward more complex agentic systems. To support this, standards such as the Model Context Protocol (MCP) have emerged, enabling agents to access tools by including a specification of the capabilities of each tool within the prompt. Although this approach expands what agents can do, it also introduces a growing problem: prompt bloating. As the number of tools increases, the prompts become longer, leading to high prompt token costs, increased latency, and reduced task success resulting from the selection of tools irrelevant to the prompt.
@@ -1335,7 +1316,7 @@ In this paper, we describe the design of the taxonomy, the tool selection algori
 
                     <!-- 论文 43 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="Reflection-Driven Control for Trustworthy Code Agents" 
                         data-authors="Wang Bin, Quan Jiazheng, Xingrui Yu, Hu Hansen, YuHao, Ivor Tsang"
                         data-abstract="Contemporary large language model (LLM) agents are remarkably capable, but they still lack reliable safety controls and can produce unconstrained, unpredictable, and even actively harmful outputs. To address this, we introduce \textbf{Reflection-Driven Control}, a standardized and pluggable control module that can be seamlessly integrated into general agent architectures. Reflection-Driven Control elevates __elf-reflection_ from a post hoc patch into an explicit step in the agent__ own reasoning process: during generation, the agent continuously runs an internal reflection loop that monitors and evaluates its own decision path. When potential risks are detected, the system retrieves relevant repair examples and secure coding guidelines from an evolving reflective memory, injecting these evidence-based constraints directly into subsequent reasoning steps. We instantiate Reflection-Driven Control in the setting of secure code generation and systematically evaluate it across eight classes of security-critical programming tasks. Empirical results show that Reflection-Driven Control substantially improves the security and policy compliance of generated code while largely preserving functional correctness, with minimal runtime and token overhead. Taken together, these findings indicate that Reflection-Driven Control is a practical path toward trustworthy AI coding agents: it enables designs that are simultaneously autonomous, safer by construction, and auditable.">
@@ -1372,7 +1353,7 @@ In this paper, we describe the design of the taxonomy, the tool selection algori
 
                     <!-- 论文 45 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="oral" 
                         data-title="TrustRAG: Enhancing Robustness and Trustworthiness in Retrieval-Augmented Generation" 
                         data-authors="Huichi Zhou, KinHei Lee, Zhonghao Zhan, Zhenhao Li, Yue Chen, Huaxiu Yao, Hamed Haddadi, Emine Yilmaz"
                         data-abstract="Retrieval-Augmented Generation (RAG) enhances large language models (LLMs) by integrating external knowledge sources, enabling more accurate and contextually relevant responses tailored to user queries. These systems, however, remain susceptible to various RAG attacks, which can severely impair the performance of LLMs. To address this challenge, we propose TrustRAG, a robust framework that systematically filters malicious and irrelevant content and relies on knowledge resolution to dynamically balance internal and external knowledge, ensuring trustworthy and reliable generation. Our approach employs a two-stage defense mechanism. The first stage implements a cluster filtering strategy to efficiently remove surfaced attack patterns that are similar. The second stage in addition employs a self-assessment process that utilizes the reasoning capabilities of LLMs to resolve both intra-documents fact conflicts and internal-external knowledge inconsistencies, dynamically choosing the source where the final answer is grounded. TrustRAG provides a plug-and-play, training-free module that integrates seamlessly with any open- or closed-source language model. Extensive experiments show that TrustRAG significantly improves efficiency and robustness against diverse RAG attacks, including real-world situations.">
@@ -1404,7 +1385,7 @@ In this paper, we describe the design of the taxonomy, the tool selection algori
 
                     <!-- 论文 46 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="Empowering Small Language Models with Factual Hallucination-Aware Reasoning for Financial Classification" 
                         data-authors="Han Yuan, Yilin Wu, Li Zhang, Zheng Ma"
                         data-abstract="Small language models (SLMs) are increasingly used for financial classification due to their fast inference and local deployability. However, compared with large language models, SLMs are more prone to factual hallucinations in reasoning and exhibit weaker classification performance. This raises a natural question: can mitigating factual hallucinations improve SLMs&#x27; financial classification? To address this, we propose a three-step pipeline named AAAI (Association identification, Automated detection, and Adaptive Inference). Experiments on three representative SLMs reveal that: (1) factual hallucinations are positively correlated with misclassifications; (2) encoder-based verifiers effectively detect factual hallucinations; and (3) incorporating feedback on factual errors enables SLMs&#x27; adaptive inference that enhances classification performance. We hope this pipeline contributes to trustworthy and effective applications of SLMs in finance.">
@@ -1441,7 +1422,7 @@ In this paper, we describe the design of the taxonomy, the tool selection algori
 
                     <!-- 论文 47 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="IntentGuard: Safeguard LLM Agents via Intent Alignment" 
                         data-authors="Jingyue Cong, XinyuanQiao, Yulin Dong, Yueheng Huang, Yang Yu, Estrid He, Andy Song"
                         data-abstract="ReAct-like LLM agents, integrating reasoning and planning, can autonomously operate in external environments to accomplish complex tasks, unlocking vast new possibilities. Nonetheless, significant safety risks have emerged alongside these advancements. Unsafe agent behaviors, arising from model hallucinations or adversarial manipulation, may lead to severe consequences such as data leakage and financial loss. Existing safeguard mechanisms are mainly based on risk checking against a fixed set of static safety rules and are therefore ineffective when dealing with task-specific requirements or dynamic changes in external environments. In this study, we present IntentGuard, a novel runtime guardrail framework that is training-free and model-agnostic. IntentGuard maintains coherent agent intent through continuous intent alignment during task execution, incorporating two safety gates: the Plan Gate and the Tool Gate. These gates ensure the safety of the agent__ high-level plans and individual tool invocations, respectively. Through experiments on key benchmarks, IntentGuard demonstrates high effectiveness in detecting malicious attacks against LLM agents across diverse application domains, significantly and consistently outperforming existing baselines. Our code is available at https://anonymous.4open.science/r/agentdefense-CB92.">
@@ -1473,7 +1454,7 @@ In this paper, we describe the design of the taxonomy, the tool selection algori
 
                     <!-- 论文 48 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="Divergence or Fusion? CN and US LLMs Value Comparison in An AI-Oriented Measurement Framework" 
                         data-authors="Yang Ma, Song Tong, Bo Wang, KAIPING PENG"
                         data-abstract="Large Language Models (LLMs) are increasingly shaping human cognition and social decision-making, raising concerns about their implicit value orientations. This study proposes a five-dimensional AI Value Assessment Framework__overing Practical, Epistemic, Protective, Social, and Personal domains__o systematically evaluate value tendencies in LLMs. Using a cross-cultural value-ranking task across 20 Chinese and American models, we find that LLMs generally emphasize accuracy and human-rights protection while underrepresenting emotional and hedonic values. Contrary to expectations of a strong ideo-logical gap, Chinese and American models show limited divergence, clustering instead by training strategies (e.g., ethical vs. instrumental). The findings offer a scientific and data-driven lens to understand and guide value align-ment in global AI development.">
@@ -1510,7 +1491,7 @@ In this paper, we describe the design of the taxonomy, the tool selection algori
 
                     <!-- 论文 49 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="Amplification Effects in Test-Time Reinforcement Learning: Safety and Reasoning Vulnerabilities" 
                         data-authors="Vanshaj Khattar, Moumita Choudhury, Md Rafi Ur Rashid, Jing Liu, Toshiaki Koike-Akino, Ming Jin, Ye Wang"
                         data-abstract="Test-time training (TTT) has recently emerged as a promising method to improve the reasoning abilities of large language models (LLMs), in which the model directly learns from test data without access to labels. However, this reliance on test data also makes TTT methods vulnerable to harmful prompt injections. In this paper, we investigate safety vulnerabilities of TTT methods, where we specifically consider test-time reinforcement learning (TTRL), a recent TTT method that improves LLM reasoning by rewarding self-consistency using majority vote as a reward signal. We show that harmful prompt injection during TTRL amplifies the model__ existing behaviors, i.e., **safety amplification** when the base model is relatively safe, and **harmfulness amplification** when it is vulnerable to the injected data. In both cases, there is a decline in reasoning ability, which we refer to as the **reasoning tax**. We also show that TTRL can be exploited adversarially using specially designed ``HarmInject&#x27;&#x27; prompts to force the model to answer jailbreak and reasoning queries together, resulting in stronger harmfulness amplification. Overall, our results highlight that TTT methods that enhance LLM reasoning by promoting self-consistency can lead to amplification behaviors and reasoning degradation, highlighting the need for safer TTT methods.">
@@ -1547,7 +1528,7 @@ In this paper, we describe the design of the taxonomy, the tool selection algori
 
                     <!-- 论文 50 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="Stochasticity in Agentic Evaluations: Quantifying Inconsistency with Intraclass Correlation" 
                         data-authors="Zairah Mustahsan, Abel Lim, Megna Anand, Saahil Jain, Bryan McCann"
                         data-abstract="As large language models become components of larger agentic systems, evaluation reliability becomes critical: unreliable sub-agents introduce brittleness into downstream system behavior. Yet current evaluation practice, reporting a single accuracy number from a single run__bscures the variance underlying these results, making it impossible to distinguish genuine capability improvements from lucky sampling. We propose adopting Intraclass Correlation Coefficient (ICC), a metric from measurement science, to characterize this variance. ICC decomposes observed variance into between-query variance (task difficulty) and within-query variance (agent inconsistency), revealing whether reported results reflect true capability or measurement noise. We evaluated on GAIA (Levels 1_3, measuring agentic capabilities across varying reasoning complexity) and FRAMES (measuring retrieval and factuality across multiple documents). We found that ICC varies dramatically with task structure, with reasoning and retrieval tasks (FRAMES) exhibit ICC=0.4955_0.7118 across models, and agentic tasks (GAIA) exhibiting ICC= 0.304-0.774 across models. For sub-agent replacement decisions in agentic systems, accuracy improvements are only trustworthy if ICC also improves. We demonstrate that ICC converges by n=8_16 trials for structured tasks and 
@@ -1580,7 +1561,7 @@ In this paper, we describe the design of the taxonomy, the tool selection algori
 
                     <!-- 论文 52 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="Internal Representations as Indicators of Hallucinations in Agent Tool Selection" 
                         data-authors="Kait Healy, Bharathi Srinivasan, Visakh Madathil, Jing Wu"
                         data-abstract="Large Language Models (LLMs) have shown remarkable capabilities in tool calling and tool usage, but suffer from hallucinations where they choose incorrect tools, provide malformed parameters and exhibit &#x27;tool bypass&#x27; behavior by performing simulations and generating outputs instead of invoking specialized tools or external systems. This undermines the reliability of LLM based agents in production systems as it leads to inconsistent results,  and bypasses security and audit controls. Such hallucinations in agent tool selection require early detection and error handling. Unlike existing hallucination detection methods that require multiple forward passes or external validation, we present a computationally efficient framework that detects tool-calling hallucinations in real-time by leveraging LLMs&#x27; internal representations during the same forward pass used for generation. We evaluate this approach on reasoning tasks across multiple domains, demonstrating strong detection performance (up to 86.4\% accuracy) while maintaining real-time inference capabilities with minimal computational overhead, particularly excelling at detecting parameter-level hallucinations and inappropriate tool selections, critical for reliable agent deployment.">
@@ -1612,7 +1593,7 @@ In this paper, we describe the design of the taxonomy, the tool selection algori
 
                     <!-- 论文 53 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="When Refusals Fail: Unstable Safety Mechanisms in Long-Context LLM Agents" 
                         data-authors="Tsimur Hadeliya, Mohammad Ali Jauhar, Nidhi Sakpal, Diogo Cruz"
                         data-abstract="Solving complex or long-horizon problems often requires large language models (LLMs) to use external tools and operate over a significantly longer context window. New LLMs enable longer context windows and support tool calling capabilities. Prior works have focused mainly on evaluation of LLMs on long-context prompts, leaving agentic setup relatively unexplored, both from capability and safety perspectives. Our work addresses this gap. We find that LLM agents could be sensitive to length, type, and placement of the context, exhibiting unexpected and inconsistent shifts in task performance and in refusals to execute harmful requests. Models with 1M-2M token context windows show severe degradation already at 100K tokens, with performance drops exceeding 50\% for both benign and harmful tasks. Refusal rates shift unpredictably: GPT-4.1-nano increases from $\sim$5\% to $\sim$40\% while Grok 4 Fast decreases from $\sim$80\% to $\sim$10\% at 200K tokens. Our work shows potential safety issues with agents operating on longer context and opens additional questions on the current metrics and paradigm for evaluating LLM agent safety on long multi-step tasks. In particular, our results on LLM agents reveal a notable divergence in both capability and safety performance compared to prior evaluations of LLMs on similar criteria.">
@@ -1644,7 +1625,7 @@ In this paper, we describe the design of the taxonomy, the tool selection algori
 
                     <!-- 论文 54 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="DrawingBench: Evaluating Spatial Reasoning and UI Interaction Capabilities of Large Language Models through Mouse-Based Drawing Tasks" 
                         data-authors="Hyunjun Kim, Sooyoung Ryu"
                         data-abstract="As agentic AI systems increasingly operate autonomously, establishing trust through verifiable evaluation becomes critical. Yet existing benchmarks lack the transparency and auditability needed to assess whether agents behave reliably. We present DrawingBench, a verification framework for evaluating the trustworthiness of agentic LLMs through spatial reasoning tasks that require generating sequences of low-level GUI actions. Unlike opaque evaluations, DrawingBench provides transparent, rule-based assessment: 8 objective criteria enable reproducible scoring, while action-level inspection allows stakeholders to audit agent behavior. Our framework comprises 250 diverse prompts across 20 categories and 4 difficulty levels, deterministic evaluation metrics, and an external oversight mechanism through multi-turn feedback that enables human control over agent refinement. Evaluating four state-of-the-art LLMs (Claude-4 Sonnet, GPT-4.1, GPT-4.1-mini, Gemini-2.5 Flash) across 1,000 tests, we establish both capabilities and limitations: models achieved 92.8% perfect performance with structured external feedback driving significant improvements (average +3.2%, up to +32.8% for complex scenes), but systematic error patterns emerged in tool state management and long-horizon planning. Notably, specification clarity proved more important than task complexity---models achieved 100% perfect performance when given explicit, verifiable criteria. These findings demonstrate that transparent evaluation frameworks can establish trust in agentic systems, with external oversight proving more reliable than self-correction for guiding agent behavior. Our open-source framework provides a template for trustworthy agent assessment. Code and data: [DrawingBench GitHub](https://github.com/hyunjun1121/DrawingBench)">
@@ -1676,7 +1657,7 @@ In this paper, we describe the design of the taxonomy, the tool selection algori
 
                     <!-- 论文 55 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="CertiHealth: Towards Certified, Uncertainty-Aware, and Explainable AI for Medical Decision-Making" 
                         data-authors="Bisiriyu Maqsudhat Kofoworola"
                         data-abstract="Artificial intelligence has shown promise in automating clinical diagnosis and decision support, yet most medical AI systems remain unreliable, opaque, and unverified [1, 4, 5]. Existing approaches typically address either model interpretability [6, 7], uncertainty quantification [3], or robustness certification [1, 2] in isolation, leaving critical gaps in safety and trust [11, 12]. This paper introduces CertiHealth, a unified framework for developing certified, uncertainty-aware, and explainable AI models for medical decision-making. CertiHealth constrains neural architectures through Lipschitz continuity [1], enabling formal robustness guarantees against bounded input perturbations. It integrates probabilistic uncertainty estimation [3] to assess predictive confidence and employs interpretable attribution mechanisms [6, 7] to provide transparent, clinically meaningful explanations. Evaluated on diagnostic tasks using the MIMIC-IV clinical dataset, CertiHealth demonstrates improved calibration, verifiable robustness, and alignment between model explanations and known medical risk factors. By combining mathematical certification, quantified uncertainty, and human-centered interpretability [8, 9, 13], CertiHealth advances the development of verifiably trustworthy medical AI suitable for safety-critical healthcare environments [10, 12, 14].">
@@ -1708,7 +1689,7 @@ In this paper, we describe the design of the taxonomy, the tool selection algori
 
                     <!-- 论文 56 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="When Small Models Are Right for Wrong Reasons: Process Verification for Trustworthy Agents" 
                         data-authors="Laksh Advani"
                         data-abstract="Deploying small language models (7-9B parameters) as autonomous agents requires trust in their reasoning, not just their outputs. We reveal a critical reliability crisis: 50-69\% of correct answers from these models contain fundamentally flawed reasoning---a ``Right-for-Wrong-Reasons&#x27;&#x27; phenomenon invisible to standard accuracy metrics. Through analysis of 10,734 reasoning traces across three models and diverse tasks, we introduce the Reasoning Integrity Score (RIS), a process-based metric validated with substantial inter-rater agreement ($\kappa=0.657$). Conventional practices are challenged by our findings: while retrieval-augmented generation (RAG) significantly improves reasoning integrity (Cohen&#x27;s $d=0.23$--$0.93$), meta-cognitive interventions like self-critique often harm performance ($d=-0.14$ to $-0.33$) in small models on the evaluated tasks. Mechanistic analysis reveals RAG succeeds by grounding calculations in external evidence, reducing errors by 7.6\%, while meta-cognition amplifies confusion without sufficient model capacity. To enable deployment, verification capabilities are distilled into a neural classifier achieving 0.86 F1-score with 100$\times$ speedup. These results underscore the necessity of process-based verification for trustworthy agents: accuracy alone is dangerously insufficient when models can be right for entirely wrong reasons.">
@@ -1744,7 +1725,7 @@ In this paper, we describe the design of the taxonomy, the tool selection algori
                     </article>
                     <!-- 论文 57 -->
                     <article class="paper-row" 
-                    data-type="long" 
+                    data-type="poster" 
                     data-title="MermaidFlow-CF: How Agentic Workflow Representation Governs Constraint-Faithful Control" 
                     data-authors="Keyi Xiang, Boyuan Shi, Yueming Lyu, Jianda Chen, Ivor Tsang, Haiyan Yin"
                     data-abstract="Agentic workflows coordinate LLM agents to autonomously generate, refine, and execute multi-step task pipelines, yet maintaining reliable control over instruction-following behavior remains challenging, often resulting in cascading workflow failures. These failures frequently stem from unconstrained workflow synthesis, where structural drift and broken control flow accumulate over time. In this paper, we show that a key driver of this brittleness is workflow representation, which determines whether planning structure and control flow can be preserved during generation, evaluation, and execution. We introduce MermaidFlow-CF, a constraint-faithful workflow optimization framework that represents workflows in a symbolic graph DSL Mermaid, enabling symbolic control-flow syntax that renders planning structure explicit and supports interpretable and checkable workflow generation. Building on this formulation, we formalize the constrained workflow optimization problem and introduce a structured taxonomy of workflow constraints spanning resource feasibility, executability, structural validity, and causal coherence. We further develop an evaluation protocol to measure constraint violation and correction dynamics for the constraints. Across multi-step reasoning benchmarks, MermaidFlow-CF achieves significantly higher constraint fidelity and markedly fewer cascading failures than AFlow, a Python-based workflow optimization baseline. These results show that symbolic workflow representations in Mermaid provide a more reliable foundation for agentic pipelines than Python, and that constraints function not as barriers but as structural priors that shape optimization dynamics and enable more stable, higher-performance optimization in agentic workflow planning.
@@ -1776,7 +1757,7 @@ In this paper, we describe the design of the taxonomy, the tool selection algori
                 </article>
                     <!-- 论文 58 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="Catching Contamination Before Generation: Spectral Kill Switches for Agents" 
                         data-authors="Valentin NO_L"
                         data-abstract="Agentic language models compose multi step reasoning chains, yet intermediate steps can be corrupted by inconsistent context, retrieval errors, or adversarial inputs, which makes post hoc evaluation too late because errors propagate before detection. We introduce a diagnostic that requires no additional training and uses only the forward pass to emit a binary accept or reject signal during agent execution. The method analyzes token graphs induced by attention and computes two spectral statistics in early layers, namely the high frequency energy ratio and spectral entropy. We formalize these signals, establish invariances, and provide finite sample estimators with uncertainty quantification. Under a two regime mixture assumption with a monotone likelihood ratio property, we show that a single threshold on the high frequency energy ratio is optimal in the Bayes sense for detecting context inconsistency. Empirically, the high frequency energy ratio exhibits robust bimodality during context verification across multiple model families, which enables gating decisions with overhead below one millisecond on our hardware and configurations. We demonstrate integration into retrieval augmented agent pipelines and discuss deployment as an inline safety monitor. The approach detects contamination while the model is still processing the text, before errors commit to the reasoning chain.">
@@ -1813,7 +1794,7 @@ In this paper, we describe the design of the taxonomy, the tool selection algori
 
                     <!-- 论文 60 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="COMPASS: Context-Modulated PID Attention Steering System for Hallucination Mitigation" 
                         data-authors="Kenji Sahay, Snigdha Pandya, Rohan Nagale, Anna Lin, Shikhar Shiromani, Kevin Zhu, Sunishchal Dev"
                         data-abstract="Large language models (LLMs) increasingly operate as autonomous agents__easoning, planning, and interacting with humans and external tools. Yet these agentic systems often exhibit ungrounded or inconsistent behavior, undermining trust and alignment. We introduce COMPASS (Context-Modulated PID Attention Steering System), a lightweight and interpretable control framework for enhancing reliability in agentic LLMs. COMPASS embeds a model-based feedback loop directly within decoding, using a transparent metric, the Context Reliance Score (CRS), to quantify how attention heads ground decisions in contextual evidence. A PID controller dynamically adjusts internal attention distributions in real time, steering the model toward factually and semantically consistent reasoning without retraining or multi-pass inference. Across reasoning and retrieval-augmented benchmarks (HotpotQA, XSum, HaluEval, RAGTruth), COMPASS reduces hallucination rates (2.8_5.8\% absolute) while exposing interpretable control signals that reveal which attention heads drive trustworthy behavior. By coupling interpretability with control-theoretic feedback, COMPASS provides a pathway for verifiable, steerable, and value-aligned agentic LLMs, advancing the goals of trustworthy autonomous AI.">
@@ -1850,7 +1831,7 @@ In this paper, we describe the design of the taxonomy, the tool selection algori
 
                     <!-- 论文 61 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="UpstreamQA: A Modular Framework for Explicit Reasoning on Video Question Answering Tasks" 
                         data-authors="Jason Nguyen, Ameet Rao, Alexander Chang, Ishaan Kumar, Erin Tan"
                         data-abstract="Video Question Answering (VideoQA) demands models that jointly reason over spatial, temporal, and linguistic cues. However, the task__ inherent complexity often requires multi-step reasoning that current large multimodal models (LMMs) perform implicitly, leaving their internal decision process opaque. In contrast, large reasoning models (LRMs) explicitly generate intermediate logical steps that enhance interpretability and can improve multi-hop reasoning accuracy. Yet, these models are not designed for native video understanding, as they typically rely on static frame sampling. We propose UpstreamQA, a modular framework that disentangles and evaluates core video reasoning components through explicit upstream reasoning modules. Specifically, we employ multimodal LRMs to perform object identification and scene context generation before passing enriched reasoning traces to downstream LMMs for VideoQA. We evaluate UpstreamQA on the OpenEQA and NExTQA datasets using two LRMs (o4-mini, Gemini 2.5 Pro) and two LMMs (GPT-4o, Gemini 2.5 Flash). Our results demonstrate that introducing explicit reasoning can significantly boost performance and interpretability of downstream VideoQA, but can also lead to performance degradation when baseline performance is sufficiently high. Overall, UpstreamQA offers a principled framework for combining explicit reasoning and multimodal understanding, advancing both performance and diagnostic transparency in VideoQA in several scenarios.">
@@ -1887,7 +1868,7 @@ In this paper, we describe the design of the taxonomy, the tool selection algori
 
                     <!-- 论文 64 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="Intent-Governed Loops for Accountable Agentic AI" 
                         data-authors="Christoforus Yoga Haryanto"
                         data-abstract="Agentic LLM-based systems are now operating with tool access and institutional authority in finance, clinical triage, municipal policy, and similar high-liability domains. We argue that verifiable accountability in such settings requires architectural support beyond alignment: every emitted action must be provably authorized by an explicit mandate, within declared scope and constraints, based on current evidence, and escalated to named authority when outside mandate. We propose the intent-governed loop as a conceptual architecture that provides structural mechanisms toward these accountability properties through runtime control. This position paper articulates the core components: an Intent object (human context, symbolic constraints, semantic guidance); a Planner that proposes actions with structured justification; a dual-mode Enforcer that deterministically checks symbolic constraints then semantically evaluates boundary cases; and a temporal governance graph that records provenance, constraint evaluation, temporal coherence, and escalation. We outline key loop-level invariants, identify the non-optional architectural principles any implementation must satisfy, and propose an evaluation agenda including synthetic benchmarks, metrics, and adversarial stress tests to guide future empirical validation. Our position is that such an architecture represents necessary structural support for accountable deployment in high-liability domains, and we identify key architectural questions requiring further analysis before implementation.">
@@ -1923,7 +1904,7 @@ In this paper, we describe the design of the taxonomy, the tool selection algori
                     </article>
                     <!-- 论文 63 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="oral" 
                         data-title="PrivAgentFlow: Agentic Workflow for Distributed Privacy Control in Web Agents" 
                         data-authors="Tianyi Ma, Tianyi Tang, Yueming Lyu, Haiyan Yin, Yew-Soon Ong, Ivor Tsang"
                         data-abstract="Autonomous web agents increasingly operate on sensitive personal and contextual information, yet most privacy-preserving frameworks rely on static access policies or centralized filters that fail to adapt to task dynamics, execution context, or user intent. We introduce PrivAgentFlow, an agentic workflow framework that formulates privacy preservation as a distributed, governable optimization process embedded within the agent’s decision flow. Each node in the workflow enforces the data minimization principle by jointly deciding what information to expose and where execution should occur (local vs. API), balancing privacy risk, task relevance, and computational cost. This composition of locally adaptive nodes yields a workflow that is self-regulating, transparent, and dynamically aligned with the assigned privacy policies. In large-scale web-agent evaluations, PrivAgentFlow reduces environment-based privacy leakage by 15.5%, API-exposure leackage by 92.5%, and improves utility by 2.3% across 84 web tasks, establishing a scalable foundation for trustworthy and distributed privacy governance in web-native autonomous agents.">
@@ -1932,7 +1913,7 @@ In this paper, we describe the design of the taxonomy, the tool selection algori
                                 <h3 class="paper-row-title">
                                     PrivAgentFlow: Agentic Workflow for Distributed Privacy Control in Web Agents
                                 </h3>
-                                <div class="link"></div>
+                                <div class="link">
                                     
                                     <a href="AAAI-Workshop/63.pdf" class="paper-row-pdf" target="_blank" aria-label="View PDF">
                                         <i class="fas fa-file-pdf"></i>
@@ -1957,7 +1938,7 @@ In this paper, we describe the design of the taxonomy, the tool selection algori
                     </article>
                     <!-- 论文 65 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="DASH: Dialogue-Aware Similarity and Handshake Recognition for Topic Segmentation in Public-Channel Conversations" 
                         data-authors="SIJIN SUN, Liangbin Zhao, Ming Deng, Xiuju Fu"
                         data-abstract="Dialogue Topic Segmentation (DTS) is crucial for understanding task-oriented public-channel communications, such as maritime VHF dialogues, which feature informal speech and implicit transitions. To address the limitations of traditional methods, we propose DASH-DTS, a novel LLM-based framework. Its core contributions are: (1) topic shift detection via dialogue handshake recognition; (2) contextual enhancement through similarity-guided example selection; and (3) the generation of selective positive and negative samples to improve model discrimination and robustness. Additionally, we release VHF-Dial, the first public dataset of real-world maritime VHF communications, to advance research in this domain. DASH-DTS provides interpretable reasoning and confidence scores for each segment. Experimental results demonstrate that our framework achieves several sota segmentation trusted accuracy on both VHF-Dial and standard benchmarks, establishing a strong foundation for stable monitoring and decision support in operational dialogues.">
@@ -1989,7 +1970,7 @@ In this paper, we describe the design of the taxonomy, the tool selection algori
 
                     <!-- 论文 66 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="Towards Design of an Automated Judge for Multi-Agent Systems" 
                         data-authors="Alina Borisovna Zhidkovskaya, Kirill Rapatskikh, Jerzy Kami_ski, Barakhsin Grigorii Mikhailovich, Anna Kalyuzhnaya, Druzhinin Alexey Alekseevich, Andrey Savchenko, Julia Belikova, Konstantin Polev, Nikolay Nikitin"
                         data-abstract="Evaluating multi-agent systems (MAS) requires nuanced analysis across different levels of interaction, from individual agent behaviors to emergent collective dynamics. Existing methods relying on human annotation or single LLM evaluators struggle to capture this complexity. We introduce a novel unsupervised framework that addresses this gap through a collective of specialized LLM-based evaluators. 
@@ -2030,7 +2011,7 @@ This hierarchical evaluation framework enables precise failure identification an
 
                     <!-- 论文 68 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="A Database-Independent LLM Framework for Real-Time Authorization in Retrieval-Augmented Generation" 
                         data-authors="Halil Yesil, Sümeyye Gültekin, Fatma Bozyigit, Baris Tekin Tezel, MOHARRAM CHALLENGER"
                         data-abstract="Retrieval-Augmented Generation (RAG) systems have become effective tools for improving language model capabilities by integrating external knowledge. However, these systems face significant security problems when handling sensitive information, particularly concerning unauthorized data access. This paper presents a new access-controlled RAG framework that includes dynamic security measures without needing manual database construction or extensive preprocessing of user-specific document collections. Our approach uses three specific knowledge bases and advanced language models to make real-time access control decisions. Experimental testing on a dataset of 167 posters from six organizations__niversity of Antwerp, Flanders Make, University of Ghent, University of Hasselt, KU Leuven, and VUB__hows 93\% overall accuracy in access control decisions, with 92\% accuracy for text-based control and 78\% for image-based control. The framework enables quick deployment of secure RAG systems while maintaining efficiency and responsiveness.">
@@ -2067,7 +2048,7 @@ This hierarchical evaluation framework enables precise failure identification an
 
                     <!-- 论文 69 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="Verifiability-First Agents: Provable Observability and Lightweight Audit Agents for Controlling Autonomous LLM Systems" 
                         data-authors="Abhivansh Gupta"
                         data-abstract="As LLM-based agents grow more autonomous and multi- modal, ensuring they remain controllable, auditable, and faithful to deployer intent becomes critical. Prior benchmarks measured propensity for misaligned behavior and showed that agent personalities and tool access significantly influ- ence misalignment. Building on those insights, we propose a Verifiability-First architecture that (1) integrates run-time attestations of agent actions (cryptographic &amp; symbolic), (2) embeds lightweight Audit Agents that continuously verify in- tent vs. behavior using constrained reasoning, and (3) en- forces challenge__esponse attestation protocols for high-risk operations. We introduce OPERA (Observability, Provable Execution, Red-team, Attestation), a benchmark suite and evaluation protocol designed to measure (i) detectability of misalignment, (ii) time-to-detection under stealthy strategies, and (iii) resilience of verifiability mechanisms to adversar- ial prompt/persona injection. Our approach aims to shift the evaluation focus from __ow likely misalignment is_ to __ow quickly and reliably misalignment can be detected and reme- diated._">
@@ -2104,7 +2085,7 @@ This hierarchical evaluation framework enables precise failure identification an
 
                     <!-- 论文 70 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="Emergent Collusion in LLM-Powered Multi-Agent Markets: A Comprehensive Survey of Risks, Mechanisms, Governance, and Regulatory Challenges" 
                         data-authors="Mohammad Sajjad Ghaemi"
                         data-abstract="We are facing complications in measuring market efficiency and regulatory challenges as today__ competitive markets are disrupted by sophisticated large-language-model (LLM)-powered autonomous agents. Although these agents are not explicitly programmed for collusion, a concerning tendency toward such behavior has been documented. Their intrinsic reward-maximizing incentives can inadvertently cause forms of coordination that circumvent conventional antitrust regulatory frameworks. Thus, on one hand, competition is unfairly compromised, while on the other hand, the existing regulatory mechanisms are challenged due to the high risk of algorithmic collusion in these markets. In this study, we survey the emerging phenomenon of collusion to provide a systematic analysis of the empirical evidence associated with collusive behaviors among competing LLM-powered agents across diverse markets. Moreover, we organize our analysis based on three scientific and regulatory pillars. First, we depict the theoretical and empirical risks of game-theoretic principles and Multi-Agent Reinforcement Learning (MARL) dynamics for collusive behaviors. Second, we elaborate the sophisticated mechanisms of collusion characterized by three primary LLM-enabled strategies: tacit coordination emerging from complex behavioral learning, explicit natural-language cartels, and covert steganographic collaboration. Third, we examine the fundamental governance and regulatory challenges inherent in LLM opacity, restrictions of current antitrust law with regard to intent, and difficulties in detection and monitoring. To address this threat, we propose three research priorities: (1) developing robust, interpretable detection methodologies that can distinguish legitimate cooperation from illicit coordination; (2) designing verifiably competitive agent architectures through constrained objective functions and transparent communication protocols; and (3) addressing crucial gaps in existing antitrust frameworks, especially the establishment of intent and agreement challenges.">
@@ -2136,7 +2117,7 @@ This hierarchical evaluation framework enables precise failure identification an
 
                     <!-- 论文 71 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="Verifiable Control and Calibrated Trust in Embodied Neuromorphic Agents for Safety-Critical Applications" 
                         data-authors="Sylvester Kaczmarek"
                         data-abstract="Agentic systems for physical world applications must satisfy strict bounds on latency, energy, and safety. We present an embodied agent architecture, built on spiking neural networks and integrated with a runtime safety supervisor and a calibrated human-in-the-loop interface. The system provides verifiable control through formal safety envelopes and produces auditable evidence objects at runtime. Hardware-in-the-loop validation on a BrainChip Akida neuromorphic processor demonstrates a 92% mission success rate under combined adversarial and environmental faults, with a median inference latency of 1.2 ms and an energy of 45 $\mu$J per inference. A 90-participant study confirms its utility for human oversight, where integrated explanations increased operator diagnostic accuracy from 61.2% to 88.5% and subjective trust from 2.8 to 4.5 on a five-point Likert scale, with cognitive load assessed via the NASA-TLX framework. The findings establish a practical and verifiable paradigm for embodied agency at the edge, complementing LLM-centric architectures by providing a deployable solution for applications where safety and resource efficiency are paramount.">
@@ -2173,7 +2154,7 @@ This hierarchical evaluation framework enables precise failure identification an
 
                     <!-- 论文 72 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="Lattice: Generative Guardrails for Conversational Agents" 
                         data-authors="Emily Broadhurst, Tawab Safi, Joseph Edell, Vashisht Anand Ganesh, Karime Maamari"
                         data-abstract="Conversational AI systems require guardrails to prevent harmful outputs, yet existing approaches use static rules that cannot adapt to new threats or deployment contexts. We introduce Lattice, a framework for self-constructing and continuously improving guardrails. Lattice operates in two stages: construction builds initial guardrails from labeled examples through iterative simulation and optimization; continuous improvement autonomously adapts deployed guardrails through risk assessment, adversarial testing, and consolidation. Evaluated on the ProsocialDialog dataset, Lattice achieves 91% F1 on held-out data, outperforming keyword baselines by 43pp, LlamaGuard by 25pp, and NeMo by 4pp. The continuous improvement stage achieves 7pp F1 improvement on cross-domain data through closed-loop optimization. Our framework shows that effective guardrails can be self-constructed through iterative optimization.">
@@ -2210,7 +2191,7 @@ This hierarchical evaluation framework enables precise failure identification an
 
                     <!-- 论文 73 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="AgentTrace: A Structured Logging Framework for Agent System Observability" 
                         data-authors="Adam AlSayyad, Kelvin Yuxiang Huang, Richik Pal"
                         data-abstract="Despite the growing capabilities of autonomous agents powered by large language models (LLMs), their adoption in high-stakes domains remains limited. A key barrier is security: the inherently nondeterministic behavior of LLM agents defies static auditing approaches that have historically underpinned software assurance. Existing security methods, such as proxy-level input filtering and model glassboxing, fail to provide sufficient transparency or traceability into agent reasoning, state changes, or environmental interactions. In this work, we introduce AgentTrace, a dynamic observability and telemetry framework designed to fill this gap. AgentTrace instruments agents at runtime with minimal overhead, capturing a rich stream of structured logs across three surfaces: operational, cognitive, and contextual. Unlike traditional logging systems, AgentTrace emphasizes continuous, introspectable trace capture, designed not just for debugging or benchmarking, but as a foundational layer for agent security, accountability, and real-time monitoring. Our research highlights how AgentTrace can enable more reliable agent deployment, fine-grained risk analysis, and informed trust calibration, thereby addressing critical concerns that have so far limited the use of LLM agents in sensitive environments.">
@@ -2242,7 +2223,7 @@ This hierarchical evaluation framework enables precise failure identification an
 
                     <!-- 论文 74 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="Spectral Guarantees for Policy Drift in Self-Refining LLM Agents" 
                         data-authors="Murari Ambati"
                         data-abstract="Autonomous large language model (LLM) agents are operating more in self-refining loops, and update their internal reasoning or policy based on prior outputs. While this self-improvement model enhances capability, it potentially introduces the risk of uncontrollable policy drift. Accordingly, this paper develops a theoretical framework for analyzing such dynamics using spectral operator theory. The paper models self-refinement as a nonlinear transformation \(T\) over policy space and derives sufficient conditions for convergence to an aligned fixed point \(\pi^*\) via the spectral radius of the Jacobian \(J_T(\pi^*)\).  We establish that if \(\rho(J_T(\pi^*))&lt;1\), the agent__ refinement process is contractive and guarantees bounded drift and interpretable convergence. A small-scale empirical illustration using reflective prompting demonstrates estimation of contraction coefficients in LLM reflection loops. Our results provide the first spectral guarantees for stability and controllability in autonomous LLM agents.">
@@ -2274,7 +2255,7 @@ This hierarchical evaluation framework enables precise failure identification an
 
                     <!-- 论文 75 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="SCOUT-RAG: Scalable and Cost-Efficient Unifying Traversal for Agentic Graph-RAG over Distributed Domains" 
                         data-authors="Longkun Li, Zou Yuanben, Jinghan Wu, Yuqing Wen, Jing Li, Hangwei Qian, Ivor Tsang"
                         data-abstract="Graph-RAG improves LLM reasoning using structured knowledge, yet conventional designs rely on a centralized knowledge graph. In distributed and access-restricted settings (e.g., hospitals or multinational organizations), retrieval must select relevant domains and appropriate traversal depth without global graph visibility or exhaustive querying. 
@@ -2312,7 +2293,7 @@ To address this challenge, we introduce $\textbf{SCOUT-RAG}$ ($\textit{$\underli
 
                     <!-- 论文 77 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="Optimizing Importance Sampling Methods for Rare Output Estimation in Language Models" 
                         data-authors="Amanda Cao, Ivan Betancourt, Manish Rangan, Yuqi Sun"
                         data-abstract="Large language models (LLMs) have the ability to produce rare but potentially catastrophic outputs, especially in deployment settings where models may experience distribution shift. Understanding a model&#x27;s worst-case performance is necessary to ensuring the safety and reliability of artificial intelligence systems. However, because rare outputs have true probabilities as low as $10^{-9}$, standard sampling methods are computationally unfeasible. To reliably quantify rare output probabilities, it is essential to develop algorithms that are both computationally efficient and scalable to the agentic setting. Previous works have introduced Metropolis-Hastings Important Sampling (MHIS), an algorithm that samples from a Boltzmann-weighted distribution to better explore rare-event regions in the input space. In the following paper, we introduce Delayed-Acceptance Metropolis--Hastings Importance Sampling (DA-MHIS), an algorithm that optimizes MHIS for efficiency by filtering out poor-quality proposals. We also mention Multiple-Try Metropolis Hastings Importance Sampling as an additional variant, which attempts to improve serialized runtime. It is particularly important to develop efficient sampling algorithms to work toward a longer-term goal of eliciting and understanding rare behaviors in large-scale, agentic settings. In order to validate our methods, we compare the performance of our algorithms against the original MHIS as a baseline, and find that DA-MHIS reduces runtime by $16.4\%$ on the GELU 1-layer model. Our Github repository and code will be shared upon publication.">
@@ -2349,7 +2330,7 @@ To address this challenge, we introduce $\textbf{SCOUT-RAG}$ ($\textit{$\underli
 
                     <!-- 论文 78 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="From Biased Chatbots to Biased Agents: Examining Role Assignment Effects on LLM Agent Robustness" 
                         data-authors="Linbo Cao, Lihao Sun, Yang Yue"
                         data-abstract="Large Language Models (LLMs) are increasingly deployed as autonomous agents capable of actions with real-world impacts beyond text generation. While persona-induced biases in text generation are well documented, their effects on agent task performance remain largely unexplored, even though such effects pose more direct operational risks. In this work, we present the first systematic case study showing that demographic-based persona assignments can alter LLM agents_ behavior and degrade performance across diverse domains. Evaluating widely deployed models on agentic benchmarks spanning strategic reasoning, planning, and technical operations, we uncover substantial performance variationsup to 26.2% degradation, driven by task-irrelevant persona cues. These shifts appear across task types and model architectures, indicating that persona conditioning and simple prompt injections can distort an agent__ decision-making reliability. Our findings reveal an overlooked vulnerability in current LLM agentic systems: persona assignments can introduce implicit biases and increase behavioral volatility, raising concerns for the safe and robust deployment of LLM agents.">
@@ -2386,7 +2367,7 @@ To address this challenge, we introduce $\textbf{SCOUT-RAG}$ ($\textit{$\underli
 
                     <!-- 论文 80 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="poster" 
                         data-title="SALT: Steering Activations towards Leakage-free Thinking in Chain of Thought" 
                         data-authors="Shourya Batra, Pierce Tillman, Samarth Gaggar, Shashank Kesineni, Sunishchal Dev, Kevin Zhu, Ashwinee Panda, Maheep Chaudhary"
                         data-abstract="As Large Language Models (LLMs) evolve into personal assistants with access to sensitive user data, they face a critical privacy challenge: while prior work has addressed output-level privacy, recent findings reveal that LLMs often leak private information through their internal reasoning processes, violating contextual privacy expectations. These leaky thoughts occur when models inadvertently expose sensitive details in their reasoning traces, even when final outputs appear safe. The challenge lies in preventing such leakage without compromising the model&#x27;s reasoning capabilities, requiring a delicate balance between privacy and utility. We introduce Steering Activations towards Leakage-free Thinking (SALT), a lightweight test-time intervention that mitigates privacy leakage in model&#x27;s Chain of Thought (CoT) by injecting targeted steering vectors into hidden state. We identify the high-leakage layers responsible for this behavior. Through experiments across multiple LLMs, we demonstrate that SALT achieves reductions including 18.2% reduction in CPL on QwQ-32B, 17.9% reduction in CPL on Llama-3.1-8B, and 31.2% reduction in CPL on Deepseek in contextual privacy leakage dataset AirGapAgent-R while maintaining comparable task performance and utility. Our work establishes SALT as a practical approach for test-time privacy protection in reasoning-capable language models, offering a path toward safer deployment of LLM-based personal agents.">
@@ -2418,7 +2399,7 @@ To address this challenge, we introduce $\textbf{SCOUT-RAG}$ ($\textit{$\underli
 
                     <!-- 论文 81 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="virtual" 
                         data-title="Factor($U$,$T$): Controlling Untrusted AI by Monitoring their Plans" 
                         data-authors="Edward Lue Chee Lip, Anthony Channg, Diana Kim, Aaron Sandoval, Kevin Zhu"
                         data-abstract="As AI capabilities advance, we increasingly rely on powerful models to decompose complex tasks__ut what if the decomposer itself is malicious? Factored cognition protocols decompose complex tasks into simpler child tasks: one model creates the decomposition, while other models implement the child tasks in isolation. Prior work uses trusted (weaker but reliable) models for decomposition, which limits usefulness for tasks where decomposition itself is challenging. We introduce Factor($U$,$T$), in which an untrusted (stronger but potentially malicious) model decomposes while trusted models implement child tasks. Can monitors detect malicious activity when observing only natural language task instructions, rather than complete solutions? We baseline and red team Factor($U$,$T$) in control evaluations on BigCodeBench, a dataset of Python coding tasks. Monitors distinguishing malicious from honest decompositions perform poorly (AUROC 0.52) compared to monitors evaluating complete Python solutions (AUROC 0.96). Furthermore, Factor($D$,$U$), which uses a trusted decomposer and monitors concrete child solutions, achieves excellent discrimination (AUROC 0.96) and strong safety (1.2\% ASR), demonstrating that implementation-context monitoring succeeds where decomposition-only monitoring fails.">
@@ -2438,7 +2419,11 @@ To address this challenge, we introduce $\textbf{SCOUT-RAG}$ ($\textit{$\underli
                                         <i class="fas fa-image"></i>
                                         <span>Poster</span>
                                     </a>
-                                    
+
+                                    <a href="https://drive.google.com/file/d/1kcFXgxQ0WV4RCYbKYUK7-opYMy7U1XXF/view?usp=drive_link" class="paper-row-video" target="_blank" aria-label="View Video">
+                                        <i class="fas fa-video"></i>
+                                        <span>Video</span>
+                                    </a>
                                 </div>
                             </div>
                             <p class="paper-row-authors">
@@ -2455,7 +2440,7 @@ To address this challenge, we introduce $\textbf{SCOUT-RAG}$ ($\textit{$\underli
 
                     <!-- 论文 83 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="oral" 
                         data-title="Mind the Gap to Trustworthy LLM Agents: A Systematic Evaluation on Constraint Satisfaction for Real-World Travel Planning" 
                         data-authors="Bo-Wen Zhang, Jin Ye, Jie-Jing Shao, Yu-Feng Li, Lan-Zhe Guo"
                         data-abstract="Large language model (LLM) agents are increasingly claimed to handle complex, multi-step tasks, yet their trustworthiness in real-world task remains under-examined. Recent work on travel planning has already pointed out that constraint satisfaction is a persistent bottleneck, especially when itineraries must respect spatio-temporal feasibility, user-specific preferences, and budget or resource limits. However, these observations are mostly made in isolation: they are tied to a single dataset or a particular agent design, which makes it hard to tell whether the weakness is fundamental to current LLM agents or accidental to the setup. This paper presents a systematic examination of travel planning. We present a comprehensive review of existing travel-planning benchmarks, summarizing their design trends and highlighting the new challenges arising from these developments. We also categorize prevailing approaches into general-purpose agent, multi-agent system, and neuro-symbolic approach, and analyze their respective trade-offs between generalizability and domain adaptability. Modular ability analyses are introduced to analyze model performance across them, enabling a deeper investigation into the diverse capabilities required for successful travel planning and revealing the limitations of current methods. We find that significant challenges remain in recognizing open constraints, extracting information under constraints, and reasoning under constraints. Although these complex problems are challenging to tackle as a whole, by decomposing them into manageable sub-tasks, there remains a promising path toward achieving trustworthy agents.">
@@ -2492,7 +2477,7 @@ To address this challenge, we introduce $\textbf{SCOUT-RAG}$ ($\textit{$\underli
 
                     <!-- 论文 84 -->
                     <article class="paper-row" 
-                        data-type="long" 
+                        data-type="virtual" 
                         data-title="Tri-Bench: Stress-Testing VLM Reliability on Spatial Reasoning under Camera Tilt and Object Interference" 
                         data-authors="Amit Bendkhale"
                         data-abstract="Verifiable geometric reasoning is a critical component for trustworthy and controllable agentic AI. Despite impressive capabilities, Vision-Language Models (VLMs) often fail under realistic scene changes. We present Tri-Bench, a compact benchmark of planar triangle problems that isolates relative geometric reasoning while stressing two deployment-critical factors: camera pose (planar vs. tilted) and scene context via object interference (10 everyday objects). To test verifiability and control, we evaluate four recent VLMs using a single, fixed prompt whose guardrail explicitly describes a surrounding square border, enabling correct answers via homography. We evaluate six simple tasks over binary and continuous targets, and observe that the overall accuracy with respect to 3D ground truth is modest, ~69% on average (best ~75%, worst ~64%). The same responses align even more closely with 2D projections in the image plane, where mean accuracy is ~72%. All four VLMs consistently fail, with accuracy falling to ~0%, on recognizing minority shape classes (equilateral, isosceles, right-angled triangles). Additionally, overall VLM accuracy degrades by ~4.1% under camera tilt. This demonstrates that models fail to correctly utilize the explicit frame-of-reference hint provided in the prompt and default to 2D image plane cues. Finally, we find that object interference has no significant effect on VLM accuracy.">
@@ -2511,6 +2496,10 @@ To address this challenge, we introduce $\textbf{SCOUT-RAG}$ ($\textit{$\underli
                                     <a href="Posters/84.pdf" class="paper-row-poster" target="_blank" aria-label="View Poster">
                                         <i class="fas fa-image"></i>
                                         <span>Poster</span>
+                                    </a>
+                                    <a href="https://drive.google.com/file/d/1DHWUnxBOUWGj_gDt84X8pYLY_CyXvobj/view?usp=drive_link" class="paper-row-video" target="_blank" aria-label="View Video">
+                                        <i class="fas fa-video"></i>
+                                        <span>Video</span>
                                     </a>
                                     
                                 </div>
