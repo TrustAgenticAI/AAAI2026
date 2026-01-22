@@ -32,15 +32,19 @@ document.addEventListener('DOMContentLoaded', function() {
     function updatePaperInfo() {
         const total = filteredPapers.length;
         const start = total === 0 ? 0 : (currentPage - 1) * itemsPerPage + 1;
-        const end = Math.min(currentPage * itemsPerPage, total);
+        const end = itemsPerPage === 'all' ? total : Math.min(currentPage * itemsPerPage, total);
         
-        paperCount.innerHTML = `Showing <strong>${start}-${end}</strong> / <strong>${total}</strong> papers`;
-        
-        if (total > 0) {
-            const totalPages = Math.ceil(total / itemsPerPage);
-            pageInfo.textContent = `(Page ${currentPage} / ${totalPages})`;
-        } else {
+        if (itemsPerPage === 'all') {
+            paperCount.innerHTML = `Showing <strong>${total}</strong> papers`;
             pageInfo.textContent = '';
+        } else {
+            paperCount.innerHTML = `Showing <strong>${start}-${end}</strong> / <strong>${total}</strong> papers`;
+            if (total > 0) {
+                const totalPages = Math.ceil(total / itemsPerPage);
+                pageInfo.textContent = `(Page ${currentPage} / ${totalPages})`;
+            } else {
+                pageInfo.textContent = '';
+            }
         }
     }
 
@@ -95,6 +99,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // 排序
         filteredPapers = sortPapers(filteredPapers);
+
+        // 恢复原来的每页数量设置
+        const perPageSelect = document.getElementById('perPageSelect');
+        if (perPageSelect) {
+            itemsPerPage = perPageSelect.value === 'all' ? 'all' : parseInt(perPageSelect.value);
+        }
 
         // 重置到第一页
         currentPage = 1;
@@ -278,7 +288,8 @@ document.addEventListener('DOMContentLoaded', function() {
         btn.addEventListener('click', function() {
             filterButtons.forEach(b => b.classList.remove('active'));
             this.classList.add('active');
-            currentFilter = this.getAttribute('data-filter');
+            const filterValue = this.getAttribute('data-filter');
+            currentFilter = filterValue === 'all' ? 'all' : filterValue;
             filterAndSortPapers();
         });
     });
